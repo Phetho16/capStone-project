@@ -1,0 +1,46 @@
+.hero-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    padding-bottom: 4rem;
+    background-color: #000;
+
+}
+.hero-bar .banner{
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image:url('https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=984,h=633,fit=crop/AVLN31X7kKIygRw0/img-YZ99lx47qRhozQqK.png') ;
+    background-size: 100%;
+    background-position-y: -250px ;
+    background-repeat: no-repeat;
+    max-width: 1255px;
+    width: 100%;
+    border-radius: 5px;
+   mask-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0));
+   
+
+    
+}
+.hero-bar .banner h1 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: 20rem;
+    opacity: 400%;
+   
+
+
+}
+.hero-bar .banner .btn_secondary {
+    background-color: #fff;
+    color: #9E1F83;
+    font-size: 1rem;
+    padding: 1rem ;
+    margin-top: 0.5rem;
+    border-radius: 30px;
+  
+}

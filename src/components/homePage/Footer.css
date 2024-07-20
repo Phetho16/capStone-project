@@ -1,0 +1,26 @@
+.top{
+   display: flex; 
+   justify-content: space-evenly;
+   border-top: 1px solid lightgray;
+
+}
+.col h2{
+    font-size: 15px;
+    display: flex;
+}
+.text{
+    color: lightgray;
+    display: flex;
+    font-size: 12px;
+}
+.bottom p{
+    display: flex;
+    color: lightgrey;
+    font-size: 12px;
+  
+}
+.bottom_text{
+    color: lightgray;
+    justify-content: space-between;
+    font-size: 12px;
+}

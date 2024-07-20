@@ -1,0 +1,41 @@
+.inspiration{
+    padding: 2rem;
+}
+.inspiration .tabs{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    border-bottom: 1px solid #ccc;
+
+}
+.inspiration .tabs a{
+    color: #aaa;
+    text-decoration: none;
+}
+.inspiration .tabs li{
+    padding:0.7rem ;
+}
+.inspiration .tabs li:hover{
+    background-color: #f7f7f7;
+}
+.inspiration .tabs li.active{
+    border-bottom: 1px solid #000;
+}
+.inspiration .types{
+    list-style-type:none ;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.inspiration .types li{
+    flex: 1 1 25%;
+    padding: 0.5rem;
+}
+.inspiration .types li b{
+    display: vlock ;
+}
+.inspiration .types li span {
+    color: 595757;
+}

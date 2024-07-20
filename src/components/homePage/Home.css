@@ -1,0 +1,45 @@
+.categories{
+   padding:3rem 2rem;
+}
+.heading{
+    font-weight: 700;
+}
+.sliders{
+    margin-top:2rem ;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.categories .card:not(:last-child){
+    margin-right:1rem;
+}
+.categories .card {
+    position:relative;
+}
+.image{
+    border-radius: 20px;
+    cursor: pointer;
+}
+.categories .card .bottom{
+    background-color: #000;
+    color: #fff;
+    padding-top: 0.8rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 9rem;
+    border-radius: 20px;
+}
+.categories .card:first-child .bottom{
+    background-color: #CC2D4A;
+}
+.categories .card:nth-child(2) .bottom {
+    background-color: #BC1A6E;
+}
+.categories .card:nth-child(3) .bottom{
+    background-color:#CC2D4A;
+}
+.categories .card:nth-child(4) .bottom{
+    background-color:#b42e46;
+}

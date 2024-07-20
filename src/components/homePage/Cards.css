@@ -1,0 +1,45 @@
+.experience{
+    padding: 3rem 2rem;
+}
+.experience .slider{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    
+}
+.experience .card {
+    width: 100%;
+    margin:0 1rem;
+    max-height: 340px;
+    position: relative;
+    overflow: hidden;
+}
+.experience .card img{
+    width:125%;
+    max-height: 125%;
+    opacity: 200%;
+}
+.experience .card h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    transform: translate(-50%, -50%);
+   
+
+}
+.experience .card .btn{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    color: #000;
+    margin-top: 1rem;
+    transform:translate(-50%, -50%) ;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 0.6rem;
+}

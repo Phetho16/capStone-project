@@ -1,0 +1,108 @@
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    position: -webkit-sticky;
+    background-color:#010102 ;
+    top:0;
+    z-index: 100;
+    padding-top: 0.8rem;
+
+}
+.header_inner{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    padding: 0 16px;
+    max-width:1350px ;
+}
+
+.header_logo {
+    display:flex;
+    object-fit: contain;
+    height: 100px;
+    margin-left: 20px;
+    position: sticky;
+    position: -webkit-sticky;
+    
+   
+}
+.header_menu ul{
+ list-style: none;
+ display: flex;
+ align-items: center;
+ flex-direction: row;
+}
+.header_menu li{
+    margin: 0 8px;
+}
+.header_menu a{
+    font-size: 0.8rem ;
+    color: #cfd2d4;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+}
+.header_menu ::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background-color: #fff;
+    height: 2px;
+    transition: 0.3s;
+
+}
+.header_menu a:hover,
+.header_menu a.active{
+    color: #fff;
+}
+
+.header_menu a:hover::after,
+.header_menu a.active::after{
+    width: 20px;
+}
+.header_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: auto;
+
+}
+.header_right .btn_secondary{
+    border: none;
+    padding-right: 1rem ;
+    background-color:#010102 ;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 30px;
+    margin-left: 5rem ;
+}
+.header_right .btn_secondary:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.btn_icon{
+    margin: 0 0.8rem;
+    
+    background-color:#010102 ;
+    color: #cfd2d4;
+    cursor: pointer;
+    margin-left: 3rem;
+
+}
+.btn_profile{
+    background-color: #fff;
+    border-color: none;
+    padding: 0.4rem 0.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-left: 3rem;
+}

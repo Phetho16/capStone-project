@@ -1,0 +1,26 @@
+.shop{
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+h2 {
+    font-size: 400;
+}
+.shop img{
+    max-width: 600px;
+    margin-left: 400px;
+ 
+}
+.bnt{
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 30px;
+}
+.shop .lp{
+    padding-left:2rem;
+}
