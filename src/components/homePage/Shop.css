@@ -15,11 +15,14 @@ h2 {
 }
 .bnt{
     text-decoration: none;
-    background-color: #000;
+    background-color: #aaa;
     color: #fff;
     margin-top: 1rem;
     padding: 1rem;
     border-radius: 30px;
+}
+.bnt:hover{
+    background-color: black;
 }
 .shop .lp{
     padding-left:2rem;

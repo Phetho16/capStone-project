@@ -10,17 +10,11 @@
     
 }
 .experience .card {
-    width: 100%;
     margin:0 1rem;
-    max-height: 340px;
     position: relative;
     overflow: hidden;
 }
-.experience .card img{
-    width:125%;
-    max-height: 125%;
-    opacity: 200%;
-}
+
 .experience .card h3{
     position: absolute;
     top: 50%;
@@ -41,5 +35,14 @@
     transform:translate(-50%, -50%) ;
     background-color: #fff;
     border-radius: 30px;
-    padding: 0.6rem;
+    padding: 0.7rem;
+}
+.experience .card .btn:hover{
+    background-color: #000;
+    color: white;
+
+}
+.cards-img{
+    height: 800px;
+    width: 800px;
 }

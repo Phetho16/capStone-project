@@ -5,6 +5,8 @@
     align-items: center;
     max-width: 100%;
     height: 600px;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgray;
 }
 .hosting .hosting_inner{
     width: 100%;
@@ -17,19 +19,27 @@
     background-repeat:no-repeat;
     background-size:100% ;
     background-position-y: 60%;
-    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcdJkVyxCefLzaL5tuotq1zOOOREsernsoBg&s') ;
-    mask-image:linear-gradient(rgba(0,0,0,1), rgba(0,0,0,5));
+    background-image:url('https://a0.muscache.com/im/pictures/65214d06-ffb4-4b70-93c0-01d368e76649.jpg?im_w=2560&im_q=highq') ;
+    mask-image:linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1));
 }
 .hosting h2{
-    color:#fff;
-    font-size: 4rem;
-    font-weight: 500;
+    color:#000;
+    font-size: 2rem;
+    font-weight: 700;
+   margin-right: auto;
+   margin-bottom: 350px;
+    
 
 }
 .hosting button{
     background-color: #fff;
-    margin-top:2rem ;
+    margin-bottom:2rem ;
     color: #000;
     border-radius: 30px;
     padding: 1rem;
+   
+}
+.hosting button:hover{
+    background-color: #000;
+    color: white;
 }

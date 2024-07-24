@@ -36,11 +36,11 @@
 }
 
 .search_bar .input {
-    padding: 0.3rem 0.4rem; /* Adjusted padding for clarity */
+    padding: 0.3rem 0.4rem; 
     border-radius: 30px;
     cursor: pointer;
-    border: 1px solid #ccc; /* Added border for input */
-    width: 100px; /* Adjust width as needed */
+    border: 1px solid #ccc; 
+    width: 100px; 
 }
 
 .btn-primary {
@@ -48,7 +48,7 @@
     border-radius: 50px;
     border: none;
     padding: 16px;
-    background-color: #FF5A60;
+    background-color:  #ed565b;
 }
 
 .dropdown {
@@ -75,11 +75,14 @@
 }
 
 .dropdown-content span:hover {
-    background-color: #ff5a60;
+    background-color:  #ed565b;
     border-radius: 20px;
     color: white;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+.listings{
+    text-decoration: none;
 }

@@ -1,0 +1,94 @@
+.residentPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .residentPage_info {
+    background-color: white;
+    
+    padding: 20px;
+    margin-bottom: 20px;
+  
+    width: 50%;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .residentPage_info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: gray;
+   
+  }
+  
+  .residentPage_info h1 {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  
+  .residentPage_info button {
+    margin: 5px;
+    border-color: pink;
+    color: palevioletred;
+    border-radius: 20px;
+
+  }
+  .residentPage_info button:hover{
+    border-color: pink;
+    background-color: palevioletred ;
+    color: white;
+  }
+  
+  .residencies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .residency-item {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px; 
+  }
+  
+  .residency-item:hover {
+    opacity: 0.8;
+  }
+  
+  .residency-image {
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .icon{
+    margin-left:100%;
+    cursor: pointer;
+  }
+  .icon:hover{
+    border-color:hsl(0, 78%, 46%);
+  }
+  .residency-details {
+    padding: 15px;
+    width: 50%;
+  }
+  
+  .residency-details h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  .residency-details p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: gray;
+  }
+  .listing-navigation{
+    border-color:hsl(0, 78%, 46%);
+    border-radius: 20px;
+  }

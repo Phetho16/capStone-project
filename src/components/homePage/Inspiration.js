@@ -74,7 +74,7 @@ const Inspiration = () => {
           <span>England</span>
         </li>
         <li>
-          <b>Show more</b>
+          <button className='showmore-btn'>Show more</button>
         </li>
       </ul>
     </div>

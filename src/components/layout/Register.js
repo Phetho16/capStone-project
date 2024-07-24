@@ -1,23 +1,26 @@
+// Register.js
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import "./Register.css";
 
 const Register = () => {
-  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   async function registerUser(event) {
     event.preventDefault();
+    
     try {
-      await axios.post('http://localhost:4000/register', {
-        name,
+      const response = await axios.post('http://localhost:5000/api/user/register', {
         email,
         password
       });
+
+      console.log(response.data);  // Log response for debugging
+      
       alert('Registration successful');
-      // Redirect or perform any necessary action after successful registration
     } catch (error) {
       console.error('Registration failed', error);
       alert('Registration failed');
@@ -37,12 +40,6 @@ const Register = () => {
         <div className="register_container">
           <h1>Register</h1>
           <form onSubmit={registerUser}>
-            <input
-              type="text"
-              placeholder="Name"
-              value={name}
-              onChange={(event) => setName(event.target.value)}
-            />
             <h5>Email</h5>
             <input
               type="text"

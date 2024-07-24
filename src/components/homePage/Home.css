@@ -1,45 +1,51 @@
-.categories{
-   padding:3rem 2rem;
+.categories {
+  padding: 3rem 2rem;
 }
-.heading{
-    font-weight: 700;
+.heading {
+  font-weight: 700;
 }
-.sliders{
-    margin-top:2rem ;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
+.sliders {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-.categories .card:not(:last-child){
-    margin-right:1rem;
+.categories .card:not(:last-child) {
+  margin-right: 1rem;
 }
 .categories .card {
-    position:relative;
+  position: relative;
 }
-.image{
-    border-radius: 20px;
-    cursor: pointer;
+.image {
+  border-radius: 20px;
+  cursor: pointer;
+  width: 330px;
+  height: 350px;
 }
-.categories .card .bottom{
-    background-color: #000;
-    color: #fff;
-    padding-top: 0.8rem;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    height: 9rem;
-    border-radius: 20px;
+.categories .card .bottom {
+  background-color: #000;
+  color: #fff;
+  padding-top: 1rem;
+  position: absolute;
+  width: 100%;
+  bottom: -90px;
+  height: 30%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
-.categories .card:first-child .bottom{
-    background-color: #CC2D4A;
+.categories .card:first-child .bottom {
+  background-color: #cc2d4a;
 }
 .categories .card:nth-child(2) .bottom {
-    background-color: #BC1A6E;
+  background-color: #bc1a6e;
 }
-.categories .card:nth-child(3) .bottom{
-    background-color:#CC2D4A;
+.categories .card:nth-child(3) .bottom {
+  background-color: #cc2d4a;
 }
-.categories .card:nth-child(4) .bottom{
-    background-color:#b42e46;
+.categories .card:nth-child(4) .bottom {
+  background-color: #b42e46;
+}
+.card {
+  justify-content: space-evenly;
 }

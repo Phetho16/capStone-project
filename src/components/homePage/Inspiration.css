@@ -19,6 +19,7 @@
 }
 .inspiration .tabs li:hover{
     background-color: #f7f7f7;
+    border-radius: 20px;
 }
 .inspiration .tabs li.active{
     border-bottom: 1px solid #000;
@@ -33,9 +34,20 @@
     flex: 1 1 25%;
     padding: 0.5rem;
 }
+
 .inspiration .types li b{
-    display: vlock ;
+    display: block;
+   
 }
 .inspiration .types li span {
-    color: 595757;
+    font-size: 13px;
+    color: #aaa;
+}
+.showmore-btn{
+    padding: 1rem;
+    border-radius: 20px;
+}
+.showmore-btn:hover{
+    background-color:#ed565b;
+    color: white;
 }

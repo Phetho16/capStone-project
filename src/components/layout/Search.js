@@ -1,32 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import SearchIcon from '@mui/icons-material/Search';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import axios from 'axios'; 
+import SearchIcon from '@mui/icons-material/Search'
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { DateRangePicker } from "react-date-range";
 import './Search.css';
 
 const Search = () => {
-    const [locations, setLocations] = useState([]);
+    
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
     const [showDatePicker, setShowDatePicker] = useState(false);
     const [guests, setGuests] = useState(1); 
-
-    useEffect(() => {
-        fetchLocations();
-    }, []);
-
-    const fetchLocations = async () => {
-        try {
-            const response = await axios.get('http://localhost:4000/locations');
-            setLocations(response.data); 
-        } catch (error) {
-            console.error('Error fetching locations:', error);
-        }
-    };
 
     const selectionRange = {
         startDate: startDate,
@@ -54,19 +39,16 @@ const Search = () => {
                     <div className='dropdown'>
                         <label htmlFor='search'>
                             Location
-                            <ExpandMoreIcon className='dropbtn' />
                             <div className='dropdown-content'>
-                            <Link to='/maldives'>  <span>Maldives</span></Link>
-                            <Link to='/hongkong'>  <span>Hong Kong</span></Link>
-                            <Link to='/netherlands'>  <span>Netherlands</span></Link>
-                            <Link to='/newyork'>  <span>New York</span></Link>
-                            
-                                {locations.map(location => (
-                                    <Link  key={location._id} to={`/${location.slug}`}>
-                                        <span>{location.name}</span>
-                                       
-                                    </Link>
-                                ))}
+                            <Link to='/all-listings' className='listings' > <span>All listings</span></Link>
+                                <Link to='/listings' className='listings'>
+                                
+                               
+                                  <span id="hongkong">Hong Kong</span>
+                                  <span id="newyork">New-York</span>
+                                  <span id="maldives">Maldives</span>
+                                  <span id="thailand">Thailand</span>
+                                </Link>
                             </div>
                         </label>
                     </div>
